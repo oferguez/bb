@@ -1,0 +1,59 @@
+/*
+Theme Name: Pictorico-Child
+Template: pictorico
+Theme URI: https://wordpress.com/themes/pictorico/
+Description: yada da da 
+Version: -1
+Author: none
+Author URI: https://wordpress.com/themes/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, grid-layout, one-column, photography, post-formats, rtl-language-support, sticky-post, translation-ready
+*/
+
+@import url('../pictorico/style.css');
+
+body {
+    background-color: rgb(202, 199, 199)
+}
+
+
+.no-thumbnail{
+  border-style: dotted;
+  border-width: 15px;
+  border-color: rgb(139, 58, 112);
+  background: white;
+}
+
+.entry-thumbnail {
+  border-style: dashed;
+  border-width: 5px;
+  border-color: green;
+  background: white;
+}
+
+
+.blog .site-content .entry-header, .archive .site-content .entry-header, .search .site-content .entry-header {
+  margin: 5%;
+}
+
+
+.blog .site-content .hentry:nth-of-type(1n) .entry-thumbnail {
+   background: white;
+  /*
+  border-style: solid;
+  border-width: 5px;*/
+}
+
+/*
+.blog .site-content .hentry:nth-of-type(2n) .entry-thumbnail {
+  background: orange;
+}
+*/
+
+/*
+IRB FORMAT
+.div( :id => 'page' ).div( :id => 'content' ).div( :id => 'primary' ).main( :id => 'main' ).article( :id => 'post-6' ).
+div( :class => 'entry-thumbnail' ).a
+IMMEDIATE ANCESTORS (PARENT, GRANDPARENT, GREAT-GRANDPARENT AND GREAT-GREAT-GRANDPARENT)
+*/
