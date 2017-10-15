@@ -29,11 +29,12 @@ body {
   border-style: dashed;
   border-width: 5px;
   border-color: green;
-  background: white;
 }
 
 
-.blog .site-content .entry-header, .archive .site-content .entry-header, .search .site-content .entry-header {
+.blog .site-content .entry-header,
+.archive .site-content .entry-header, 
+.search .site-content .entry-header {
   margin: 5%;
 }
 
@@ -44,6 +45,64 @@ body {
   border-style: solid;
   border-width: 5px;*/
 }
+
+
+
+
+.entry-header {
+  background: rgba(39, 177, 231, 0.77);
+  border-bottom: 0 ;
+  border-top:0 ;
+}
+
+/* dev page in monospace*/
+#post-40 {
+  font-family: monospace;
+}
+
+/*
+▼div( :id => 'page', :class => 'hfeed site' )
+
+    ▼div( :id => 'content', :class => 'site-content' )
+
+      ▼div( :id => 'primary', :class => 'content-area' )
+
+        ▼main( :id => 'main', :class => 'site-main', :role => 'main' )
+
+          ▼article( :id => 'post-40', :class => 'post-40 page type-page status-publish hentry', :style => '' )
+
+            ▼header( :class => 'entry-header', :style => '' )
+
+              ▼h1( :class => 'entry-title', :style => '' )
+*/
+
+
+
+/*
+/html/body
+bodybody
+
+IRB FORMAT
+.div( :id => 'page' ).div( :id => 'content' ).div( :id => 'primary' ).main( :id => 'main' ).article( :id => 'post-40' ).div( :class => 'entry-content' )
+IMMEDIATE ANCESTORS (PARENT, GRANDPARENT, GREAT-GRANDPARENT AND GREAT-GREAT-GRANDPARENT)
+
+div( :id => 'content', :class => 'site-content' )
+Great-Great-Grandparent
+▲
+div( :id => 'primary', :class => 'content-area' )
+Great-Grandparent
+▲
+main( :id => 'main', :class => 'site-main', :role => 'main' )
+Grandparent
+▲
+article( :id => 'post-40', :class => 'post-40 page type-page status-publish hentry', :style => '' )
+Direct Parent
+▲
+div( :class => 'entry-content', :style => '' )
+Current Element
+
+
+*/
 
 /*
 .blog .site-content .hentry:nth-of-type(2n) .entry-thumbnail {
